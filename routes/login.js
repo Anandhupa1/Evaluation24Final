@@ -18,7 +18,7 @@ loginRouter.post("/",validateUser,async(req,res)=>{
         else {res.status(422).json({message:"wrong password"})}
         
         }else {
-        res.status(401).json({message:"no user data found, please register",token})
+        res.status(401).json({message:"no user data found, please register"})
         }
     } catch (error) {
         console.log(error)
